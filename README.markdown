@@ -15,34 +15,36 @@ Later this plugin should move from a plain wrapper to a first class website gene
 * siteClean - cleans up the site target directory
 
 ## Example usage:
-			buildscript { 
-			    repositories { 
-					mavenCentral()
-					mavenLocal()
-				} 
-			    dependencies {
-			        classpath 'com.breskeby:GradleSite:0.1-SNAPSHOT'
-			    } 
-			}
+	buildscript { 
+	    repositories { 
+			mavenCentral()
+			mavenLocal()
+		} 
+	    dependencies {
+	        classpath 'com.breskeby:GradleSite:0.1-SNAPSHOT'
+	    } 
+	}
 
-			apply plugin:'groovy'
-			apply plugin:'Site'
+	apply plugin:'groovy'
+	apply plugin:'Site'
 
-			sourceCompatibility = 1.5
-			targetCompatibility = 1.5
+	sourceCompatibility = 1.5
+	targetCompatibility = 1.5
 
-			repositories {
-			    mavenCentral()
-			}
+	repositories {
+	    mavenCentral()
+	}
 
-			deployDir = "build/customDir" as File // change the site output directory
+	deployDir = "build/customDir" as File // change the site output directory
 
-			site{
-				html.title = "Welcome at Codenarc" //set a custom browser title
-			}
+	site{
+		html.title = "Welcome at Codenarc" //set a custom browser title
+	}
 
 ## TODO
 * cleanup extensive and not used transitive doxia dependencies
+* cleanup default css
+* allow custom css definitions
 * support FML file types
 * deploy tasks
 * add more documentation than this readme
