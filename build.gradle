@@ -1,0 +1,27 @@
+apply plugin:'groovy'
+apply plugin:'idea'
+apply plugin:'maven'
+
+group = "com.breskeby"
+version = "0.1-SNAPSHOT"
+
+repositories{
+	mavenCentral()
+}
+
+dependencies{
+    compile "org.apache.maven.doxia:doxia-converter:1.2"
+    compile gradleApi()
+    groovy localGroovy()
+
+	testCompile 'junit:junit:4.8.2', 'org.spockframework:spock-core:0.5-groovy-1.7@jar'
+}
+
+ideaProject{
+    javaVersion = "1.6"
+	withXml { provider ->
+		def node = provider.asNode()
+		def gradleNode = node.appendNode('component', [name:'GradleSettings'])
+		gradleNode.appendNode('option', [name:'SDK_HOME',value:'/opt/local/share/java/gradle'])
+	}
+}
