@@ -8,6 +8,8 @@ This plugin was originally written for a live demo at the GR8conf 2011 in Europe
 
 At the moment this plugin is just a kind of a wrapper for the mvn site generation as some projects reported, that the missing gradle site support is a blocker for them. 
 
+I've tested this plugin with the codenarc project. Please provide me links to other projects to test it with.
+
 Later this plugin should move from a plain wrapper to a first class website generation of gradle (multi)project builds. 
 
 ## TASKS
