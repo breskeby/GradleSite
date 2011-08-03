@@ -2,7 +2,6 @@ package com.breskeby.gradle.site
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.DefaultTask
 
 class SitePlugin implements Plugin<Project> {
     public static final String SITE_PLUGIN_NAME = 'site'

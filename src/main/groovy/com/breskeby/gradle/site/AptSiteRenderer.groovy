@@ -2,9 +2,6 @@ package com.breskeby.gradle.site
 
 import org.apache.maven.doxia.module.apt.AptParser
 import org.apache.maven.doxia.module.xhtml.XhtmlSinkFactory
-import org.apache.maven.doxia.module.xdoc.XdocSinkFactory
-import org.apache.maven.doxia.module.xdoc.XdocParser
-import groovy.xml.StreamingMarkupBuilder
 
 /**
  * @author: Rene

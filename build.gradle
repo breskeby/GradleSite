@@ -1,9 +1,12 @@
 apply plugin:'groovy'
 apply plugin:'idea'
 apply plugin:'maven'
+apply plugin:'code-quality'
 
 group = "com.breskeby"
 version = "0.1-SNAPSHOT"
+
+codeNarcConfigFileName = "gradle/config/codenarc.groovy"
 
 repositories{
 	mavenCentral()
@@ -24,4 +27,9 @@ ideaProject{
 		def gradleNode = node.appendNode('component', [name:'GradleSettings'])
 		gradleNode.appendNode('option', [name:'SDK_HOME',value:'/opt/local/share/java/gradle'])
 	}
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.0-milestone-4'
+    jarFile = 'gradle/wrapper/gradle-wrapper.jar'
 }

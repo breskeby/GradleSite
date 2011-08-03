@@ -8,8 +8,6 @@ package com.breskeby.gradle.site
 import groovy.xml.MarkupBuilder
 import java.text.DateFormat
 import org.gradle.util.GradleVersion
-import org.apache.maven.doxia.module.apt.AptParser
-import org.apache.maven.doxia.module.xhtml.XhtmlSinkFactory
 
 class DefaultSiteRenderer {
 
