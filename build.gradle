@@ -21,8 +21,8 @@ dependencies{
 }
 
 ideaProject{
-    javaVersion = "1.6"
-	withXml { provider ->
+    idea.project.jdkName = "1.6"
+	idea.project.ipr.withXml { provider ->
 		def node = provider.asNode()
 		def gradleNode = node.appendNode('component', [name:'GradleSettings'])
 		gradleNode.appendNode('option', [name:'SDK_HOME',value:'/opt/local/share/java/gradle'])
