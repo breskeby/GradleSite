@@ -54,12 +54,12 @@ Later this plugin should move from a plain wrapper to a first class website gene
 
 ## Known Issues 
 
-## Support this
-
-* fork it
-* [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=breskeby&url=https://github.com/breskeby/GradleSite&title=GradleSite&language=en_GB&tags=github&category=software)
 * tests with the codenarc project shows following error/warn messages:
 			
 			[warn] [APT Parser] Ambiguous link: 'codenarc-rules-serialization.html'. 			
 			If this is a local link, prepend "./"!
- 
+
+## Support this
+
+* fork it
+* [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=breskeby&url=https://github.com/breskeby/GradleSite&title=GradleSite&language=en_GB&tags=github&category=software)
